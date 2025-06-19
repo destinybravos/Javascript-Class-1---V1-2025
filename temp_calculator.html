@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+</head>
+<body>
+    
+
+    <script>
+        let celsius, fahrenheit;
+        let userInput = parseInt(prompt("Choose the convertion model\n1. Degree -> Fahrenheit\n2. Fahrenheit -> Degree"))
+
+        switch (userInput){
+            case 1:
+                celsius = parseFloat(prompt("Enter the temperature in degree celsius."));
+                fahrenheit = (celsius * 9/5) + 32;
+                alert(`The temperature in degree fahrenheit is ${fahrenheit.toFixed(2)}`)
+                break;
+
+            case 2:
+                fahrenheit = parseFloat(prompt("Enter the temperature in degree fahrenheit."));
+                celsius = (fahrenheit - 32) * 5/9;
+                alert(`The temperature in degree celsius is ${celsius.toFixed(2)}`)
+                break;
+
+            default:
+                alert("Invalid Option Selected!")
+                break;
+        }
+    </script>
+</body>
+</html>

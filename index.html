@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+
+
+    <script>
+        // document.writeln("<h1 style='color:red'>Hello World</h1>");
+
+        // window.alert("Hello World");
+        // window.confirm("Are you sure?");
+        // window.prompt("Enter your name");
+
+
+        // console.log("Hello World");
+        // console.error("This is an error message");
+        // console.warn("This is a warning message");
+
+        // const year = 2025;
+        // year = 2026; // Error reassigning value
+
+        // var num1 = 12;
+        // var num2 = 13;
+        // var num3 = 4;
+        // var num4 = 80;
+        // var num5 = 20;
+
+        // var sum = num1 + num2 + num3 + num4 + num5;
+        // var ave = sum / 5;
+
+        // console.log("The sum of the 5 numbers is " + sum);
+        // console.log("The average is " + ave);
+
+        let principal, rate, time, interest, totalAmount;
+        principal = parseFloat(prompt("Enter the principal amount:"));
+        rate = parseFloat(prompt("Enter the rate of interest (%):"));
+        time = parseFloat(prompt("Enter the time in months:"));
+
+        interest = (principal * rate * time) / 100;
+        totalAmount = principal + interest;
+
+        document.writeln(`
+            <h1>Simple Interest Calculation</h1>
+            <p> <strong>Principal:</strong> &#8358;${principal.toLocaleString()} </p>
+            <p> <strong>Rate:</strong> ${rate} % </p>
+            <p> <strong>Time:</strong> ${time} months </p>
+            <p> <strong>Interest:</strong> &#8358;${interest.toFixed(2).toLocaleString()} </p>
+            <p>
+                <strong> 
+                    Total Amount to return is &#8358;${totalAmount.toFixed(2).toLocaleString()} 
+                </strong>
+            </p>
+        `);
+        
+    </script>
+</body>
+</html>
