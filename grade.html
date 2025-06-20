@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+</head>
+<body>
+    
+
+    <script>
+        // let score = parseInt(prompt("Enter the student score"));
+        // let grade = "";
+
+        // if (score >= 80 && score <= 100) {
+        //     grade = "A";
+        // } else if(score >= 70 && score <= 79) {
+        //     grade = "AB";
+        // } else if(score >= 60 && score <= 69) {
+        //     grade = "B";
+        // } else if(score >= 50 && score <= 59) {
+        //     grade = "BC";
+        // } else if(score >= 40 && score <= 49) {
+        //     grade = "C";
+        // } else if(score >= 30 && score <= 39) {
+        //     grade = "CD";
+        // } else if(score >= 20 && score <= 29) {
+        //     grade = "E";
+        // } else {
+        //     grade = "F"
+        // }
+
+        // alert("The Grade is : " + grade)
+
+        // let userInput = parseInt(prompt("Enter a Number"));
+
+        // if (userInput % 2 == 0) {
+        //     alert("The Number is Even");
+        // } else {
+        //     alert("The Number is Odd");
+        // }
+
+        let year = parseInt(prompt("Enter a Year to check if it is a leap year"));
+
+        if (year % 4 == 0) { // If the year is divisible by 4
+            if (year % 100 == 0) { // If the year is divisible by 100
+                if (year % 400 == 0) { // If the year is divisible by 400
+                    alert(`${year} is a leap year`);
+                } else {
+                    alert(`${year} is not a leap year`);
+                }
+            } else {
+                alert(`${year} is a leap year`);
+            }
+        } else {
+            alert(`${year} is not a leap year`);
+        }
+        
+    </script>
+</body>
+</html>
